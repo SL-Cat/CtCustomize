@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.github.SL-Cat'
+group='com.github.SL-Cat'
 
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "cat.customize"
         minSdkVersion 15
         targetSdkVersion 29
         versionCode 1
@@ -28,6 +27,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.android.support:design:28.0.0'
+    //noinspection GradleCompatible
+    compile 'com.android.support:design:28.0.0'
 }
